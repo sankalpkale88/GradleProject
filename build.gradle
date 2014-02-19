@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+subprojects {
+    apply plugin: 'java'
+    group = 'com.cts.sample'
+    version = '1.0'
+    sourceCompatibility = 1.7
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
